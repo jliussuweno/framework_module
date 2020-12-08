@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FC7330E256765BD00AB6D4A /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BFC91221936D1000408261 /* MyFramework.framework */; };
+		6FC7330F256765BD00AB6D4A /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9BFC91221936D1000408261 /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9BFC8E421936CFB00408261 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BFC8E321936CFB00408261 /* AppDelegate.m */; };
 		C9BFC8E721936CFB00408261 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BFC8E621936CFB00408261 /* ViewController.m */; };
 		C9BFC8EA21936CFB00408261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9BFC8E821936CFB00408261 /* Main.storyboard */; };
 		C9BFC8EC21936CFC00408261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BFC8EB21936CFC00408261 /* Assets.xcassets */; };
 		C9BFC8EF21936CFC00408261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9BFC8ED21936CFC00408261 /* LaunchScreen.storyboard */; };
 		C9BFC8F221936CFC00408261 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BFC8F121936CFC00408261 /* main.m */; };
-		C9BFC92221936DFC00408261 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BFC91221936D1000408261 /* MyFramework.framework */; };
-		C9BFC92321936DFC00408261 /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9BFC91221936D1000408261 /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9BFC947219375CD00408261 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BFC946219375CD00408261 /* File.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,23 +26,16 @@
 			remoteGlobalIDString = C9BFC90221936D0F00408261;
 			remoteInfo = MyFramework;
 		};
-		C9BFC92421936DFC00408261 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9BFC90D21936D0F00408261 /* MyFramework.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C9BFC90121936D0F00408261;
-			remoteInfo = MyFramework;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C9BFC92621936DFD00408261 /* Embed Frameworks */ = {
+		6FC73310256765BD00AB6D4A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C9BFC92321936DFC00408261 /* MyFramework.framework in Embed Frameworks */,
+				6FC7330F256765BD00AB6D4A /* MyFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,19 +63,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9BFC92221936DFC00408261 /* MyFramework.framework in Frameworks */,
+				6FC7330E256765BD00AB6D4A /* MyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FC7330C256765B300AB6D4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9BFC8D621936CFB00408261 = {
 			isa = PBXGroup;
 			children = (
 				C9BFC90D21936D0F00408261 /* MyFramework.xcodeproj */,
 				C9BFC8E121936CFB00408261 /* MyFrameworkApp */,
 				C9BFC8E021936CFB00408261 /* Products */,
+				6FC7330C256765B300AB6D4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,12 +131,11 @@
 				C9BFC8DB21936CFB00408261 /* Sources */,
 				C9BFC8DC21936CFB00408261 /* Frameworks */,
 				C9BFC8DD21936CFB00408261 /* Resources */,
-				C9BFC92621936DFD00408261 /* Embed Frameworks */,
+				6FC73310256765BD00AB6D4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9BFC92521936DFC00408261 /* PBXTargetDependency */,
 			);
 			name = MyFrameworkApp;
 			productName = MyFrameworkApp;
@@ -217,14 +217,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C9BFC92521936DFC00408261 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MyFramework;
-			targetProxy = C9BFC92421936DFC00408261 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9BFC8E821936CFB00408261 /* Main.storyboard */ = {
